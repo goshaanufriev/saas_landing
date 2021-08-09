@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Mulish:ital@0;1&display=swap');
+$general_font: 'DM Sans', sans-serif;
+$add_font: 'Mulish', sans-serif;
+$purple: #5454D4;
+$orange: #FF7143;
+$gray: #696871;
+$bg: #F2F2F2;
+
+body {
+  margin: 40px 150px;
+  padding: 0;
+  background: $bg;
+}
+
+.navbar {
+  .nav {
+    font-size: 15px;
+    &-link {
+      color: #000;
+      font-family: $general_font;
+      font-weight: 700;
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        background-color: $purple;
+        position: relative;
+        left: 0;
+        transition: 0.3s ease-out;
+        height: 2px;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .start {
+    background-color: $orange;
+    padding: 19px 60px;
+    border-radius: 10px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-family: $general_font;
+      font-weight: 700;
+      font-size: 17px;
+    }
+  }
+
+}
+
+.skate {
+  margin-top: 100px;
+  h1 {
+    font-family: $general_font;
+    font-weight: 700;
+    font-size: 80px;
+  }
+  p {
+    font-family: $add_font;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  &_start {
+    background-color: $purple;
+    padding: 19px 60px;
+    border-radius: 10px;
+    display: inline;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-family: $general_font;
+      font-weight: 700;
+      font-size: 17px;
+    }
+  }
+  .dwn_arw {
+    display: inline;
+    margin-left: 40px;
+  }
+}
+
+.pr {
+  margin-top: 110px;
+}
+
+.opportunities {
+  margin-top: 160px;
+  .descr {
+    font-family: $general_font;
+    font-weight: 700;
+    font-size: 50px;
+    &_text {
+      font-family: $add_font;
+      font-weight: 400;
+      font-size: 20px;
+    }
+    &_link {
+      text-decoration: none;
+      color: $purple;
+      font-family: $general_font;
+      font-weight: 700;
+      font-size: 17px;
+    }
+  }
+}
